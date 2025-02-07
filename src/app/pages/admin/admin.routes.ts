@@ -10,6 +10,8 @@ import { AppFormsComponent } from './forms/forms.component';
 import { AppTablesComponent } from './tables/tables.component';
 import { AdminEmployeesComponent } from './employees/employees.component';
 import { ProductsComponent } from './products/products.component';
+import { ProductInventoryComponent } from './product-inventory/product-inventory.component';
+import { SalesComponent } from './sales/sales.component';
 
 export const AdminRoutes: Routes = [
   {
@@ -24,8 +26,16 @@ export const AdminRoutes: Routes = [
         component: ProductsComponent
       },
       {
-        path: 'sales',
+        path: 'products-inventory',
+        component: ProductInventoryComponent
+      },
+      {
+        path: 'sale',
         component: AppTablesComponent
+      },
+      {
+        path: 'sales',
+        component: SalesComponent
       },
       {
         path: 'carriers',

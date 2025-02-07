@@ -9,7 +9,8 @@ import { RouterModule } from '@angular/router';
     <div class="branding">
       <a [routerLink]="['/']">
         <img
-          src="./assets/images/logos/logo.svg"
+          style="width: 110px;"
+          src="./assets/images/logos/logo_black.svg"
           class="align-middle m-2"
           alt="logo"
         />
@@ -18,5 +19,5 @@ import { RouterModule } from '@angular/router';
   `,
 })
 export class BrandingComponent {
-  constructor() {}
+  constructor() { }
 }
